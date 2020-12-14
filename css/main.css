@@ -176,7 +176,6 @@ i {
   margin-left: 2rem;
 }
 
-
 .card {
   display: block;
   background-color: #dbd6dc;
@@ -307,9 +306,18 @@ video {
     font-size: 1.5rem;
   }
 
+  .bio {
+    width: 50%;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
+
+  h1{
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
 
   .card {
     margin-right: 10rem;
