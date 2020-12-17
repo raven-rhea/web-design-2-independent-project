@@ -165,14 +165,17 @@ dt {
   margin-left: 1rem;
 }
 
-.connect > a {
+.connect-banner > a {
   text-decoration: none;
+  color: #000;
+  margin-left: 2rem;
 }
 
 footer {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
+
 }
 
 footer > p {
@@ -252,6 +255,7 @@ h3 {
 video {
   width: 320px;
   height: 240px;
+  margin-left: 2rem;
 }
 
 .img-grid {
@@ -331,6 +335,10 @@ video {
     margin-right: 2rem;
   }
 
+  video {
+    width: 480px;
+    height: 360px;
+
   .paint-text {
     margin-left: 10rem;
     margin-right: 10rem;
@@ -388,6 +396,12 @@ video {
 }
 
 @media only screen and (min-width: 90em) {
+
+
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
   .img-grid {
     margin-left: 10rem;
