@@ -43,7 +43,7 @@ body {
   grid-gap: 1rem;
   grid-template-areas:
     "banner banner"
-    "banner banner"
+    "banner banner";
 }
 
 .img-banner {
@@ -72,7 +72,6 @@ body {
 .home-logo > img {
   width: 100px;
 }
-
 
 ul {
   list-style: none;
@@ -249,7 +248,7 @@ h3 {
 
 .card-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   margin-bottom: 1rem;
   align-items: center;
 }
@@ -261,6 +260,7 @@ h3 {
 
 .card-img-left {
   padding-left: 1rem;
+  padding-bottom: 1rem;
 }
 
 video {
@@ -287,6 +287,10 @@ video {
 
   html {
     font-size: 1rem;
+  }
+
+  .card-content {
+    grid-template-columns: 1fr 1fr;
   }
 
   .card {
@@ -350,18 +354,9 @@ video {
     margin-right: 2rem;
   }
 
-  video {
-    width: 480px;
-    height: 360px;
-  }
-
   .paint-text {
     margin-left: 10rem;
     margin-right: 10rem;
-  }
-
-  nav a {
-    font-size: 1.5rem;
   }
 
   footer {
@@ -395,8 +390,12 @@ video {
   }
 
   .card-img {
-    max-width: 500px;
-    padding-left: 10rem;
+    padding-left: 5rem;
+  }
+
+  video {
+    width: 480px;
+    height: 360px;
   }
 
   .paint-text {
