@@ -42,6 +42,7 @@ body {
   position: relative;
   overflow: hidden;
   margin: 0;
+  background-color: #e2e2e2;
 }
 
 .home-logo {
@@ -175,7 +176,6 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
-
 }
 
 footer > p {
@@ -240,7 +240,7 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 1rem;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .card-img {
@@ -256,16 +256,16 @@ video {
   width: 320px;
   height: 240px;
   margin-left: 2rem;
+  margin-bottom: 1rem;
 }
 
 .img-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .paint-text {
-  margin-left: 3rem;
-  margin-right: 3rem;
+  margin: 3rem;
 }
 
 .grey {
@@ -296,6 +296,10 @@ video {
 
   .connect-banner > img {
     max-height: 450px;
+  }
+
+  .img-grid {
+    grid-template-columns: 1fr 1fr;
   }
 
 }
@@ -338,6 +342,7 @@ video {
   video {
     width: 480px;
     height: 360px;
+  }
 
   .paint-text {
     margin-left: 10rem;
@@ -375,7 +380,7 @@ video {
 
   .card-img-left {
     max-width: 500px;
-    padding-left: 10rem;
+    padding-left: 5rem;
   }
 
   .card-img {
@@ -384,9 +389,8 @@ video {
   }
 
   .paint-text {
-    margin-left: 20rem;
-    margin-right: 20rem;
-    max-width: 400px;
+    margin-left: 15rem;
+    margin-right: 15rem;
   }
 
   .img-grid {
@@ -396,7 +400,6 @@ video {
 }
 
 @media only screen and (min-width: 90em) {
-
 
   ul {
     display: grid;
@@ -414,6 +417,11 @@ video {
 
   .social-icons {
     margin-left: 10rem;
+  }
+
+  .card-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
 }
