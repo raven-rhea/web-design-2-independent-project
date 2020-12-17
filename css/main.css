@@ -105,7 +105,8 @@ h1 {
 }
 
 .about {
-  display: inline;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .bio {
@@ -142,12 +143,14 @@ h1 {
   font-family: "Playfair Display", serif;
   font-size: 2.25rem;
   padding: 1rem;
-  padding-bottom: 2rem;
+  padding-bottom: 0;
   line-height: 1;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .connect > h3 {
-  padding-top: 2rem;
+  padding-top: 0;
   font-weight: bold;
 }
 
@@ -159,15 +162,26 @@ dl {
 }
 
 dt {
-  margin-left: 2rem;
+  margin-left: 1rem;
+}
+
+.connect > a {
+  text-decoration: none;
 }
 
 footer {
-  display: inline-block;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+footer > p {
+  margin-left: 2rem;
+  margin-top: 0;
+  margin-top: 1rem;
 }
 
 .social-icons {
-  padding-bottom: 1rem;
   padding-top: 1rem;
 }
 
@@ -276,20 +290,32 @@ video {
     font-size: 1.5rem;
   }
 
+  .connect-banner > img {
+    max-height: 450px;
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 1.2rem;
+  }
 
   h1 {
     font-size: 7.6rem;
   }
 
+  .about {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .connect > h2 {
     font-size: 3.4rem;
+    margin-top: 1rem;
   }
 
   .profile-pic {
-    max-width: 50%;
     padding-left: 1rem;
   }
 
@@ -314,16 +340,19 @@ video {
     font-size: 1.5rem;
   }
 
-  .bio {
-    max-width: 50%;
+  footer {
+    grid-template-columns: 1fr 1fr;
   }
 
 }
 
 @media only screen and (min-width: 60em) {
 
+  html {
+    font-size: 1.5rem;
+  }
+
   h1 {
-    font-size: 11.4rem;
     margin-left: 7rem;
     margin-right: 7rem;
   }
@@ -350,6 +379,27 @@ video {
     margin-left: 20rem;
     margin-right: 20rem;
     max-width: 400px;
+  }
+
+  .img-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .img-grid {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  .connect {
+    margin-left: 10rem;
+  }
+
+  .social-icons {
+    margin-left: 10rem;
   }
 
 }
