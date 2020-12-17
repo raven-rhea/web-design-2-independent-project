@@ -37,31 +37,42 @@ body {
 }
 
 .banner {
-  width: 100%;
-  max-height: 700px;
-  position: relative;
-  overflow: hidden;
-  margin: 0;
   background-color: #e2e2e2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "banner banner"
+    "banner banner"
+}
+
+.img-banner {
+  max-height: 700px;
+  overflow: hidden;
+  grid-area: banner;
+}
+
+.nav {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: end;
+  order: 1;
+  margin-left: 1rem;
+}
+
+.mylogo {
+  grid-column: 1 / 2;
+  grid-row: 1;
 }
 
 .home-logo {
-  width: 100px;
-  position: absolute;
-  top: 10px;
-  left: 1rem;
-  margin: 0;
+  margin: 1rem;
 }
 
 .home-logo > img {
   width: 100px;
 }
 
-nav {
-  position: absolute;
-  left: 10px;
-  bottom: 10px;
-}
 
 ul {
   list-style: none;
